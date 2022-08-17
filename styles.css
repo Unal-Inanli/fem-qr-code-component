@@ -1,0 +1,94 @@
+:root {
+    --gray: hsl(212, 45%, 89%);
+    --white: hsl(0, 0%, 100%);
+    --gblue: hsl(220, 15%, 55%);
+    --dblue: hsl(218, 44%, 22%);
+    --round: 15px;
+    --image-width: 285px;
+}
+
+html {
+    font-size: 15px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+.bg {
+    background-color: var(--gray);
+}
+
+.qr-card {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 1rem;
+    background: var(--white);
+    box-shadow: 0px 0px 10px 10px var(--gray);
+    border-radius: var(--round);
+
+}
+
+.qr-card__image {
+    width: var(--image-width);
+    height: 285px;
+    border-radius: var(--round);
+}
+
+.qr-card__information {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 1rem;
+    max-width: var(--image-width);
+    text-align: center;
+    padding: 0.7rem;
+}
+
+.qr-card__title {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    color: var(--dblue);
+}
+
+.qr-card__instruction {
+    margin-bottom: 1rem;
+    color: var(--gblue);
+    font-size: 1.1rem;
+}
+
+.attribution {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: var(--dblue);
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}
+
+.link {
+    color: aqua;
+}
